@@ -11,7 +11,7 @@ check = False
 
 def checkQuestion(string):
 	if string == "quit":
-		return
+		exit()
 	elif string[-1] == '?':
 		check = True
 		return check
