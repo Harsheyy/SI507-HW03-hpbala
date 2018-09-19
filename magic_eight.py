@@ -1,7 +1,7 @@
 from random import randint
 
 def askUser():
-	x = input("What is your question?")
+	x = input("What is your question?    ")
 	return str(x)
 
 
