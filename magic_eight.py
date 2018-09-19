@@ -27,8 +27,9 @@ def answerUser():
 		      'Outlook not so good.','Very doubtful.']
 	print(list[x])
 
-b = askUser()
+b = 'q'
 while b != 'quit':
+	b = askUser()
 	while checkQuestion(b) == False:
 		b = askUser()
 	answerUser()
