@@ -1,17 +1,22 @@
 from random import randint
 
 def askUser():
-	x = str(input("What is your question?"))
-	return x
+	x = input("What is your question?")
+	return str(x)
 
 
-b = askUser()
+#b = askUser()
+
+check = false
 
 def checkQuestion(string):
 	if string[-1] == '?':
-		return true
+		check = true
+		return check
 	else:
-		print ("I’m sorry, I can only answer questions.")
+		print ("I'm sorry, I can only answer questions.")
+		check = false
+		return check
 
 def answerUser():
 	x = randint(0,19)
@@ -21,7 +26,7 @@ def answerUser():
 		      'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.',
 		      'Outlook not so good.','Very doubtful.']
 	print(list[x])
-
-b = askUser()
-answerUser()
+while check == false:
+	b = askUser()
+	answerUser()
 
