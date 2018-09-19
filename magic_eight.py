@@ -28,7 +28,7 @@ def answerUser():
 	print(list[x])
 
 b = askUser()
-if b != 'quit':
+while b != 'quit':
 	while checkQuestion(b) == False:
 		b = askUser()
 	answerUser()
