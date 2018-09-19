@@ -7,15 +7,15 @@ def askUser():
 
 #b = askUser()
 
-check = false
+check = False
 
 def checkQuestion(string):
 	if string[-1] == '?':
-		check = true
+		check = True
 		return check
 	else:
 		print ("I'm sorry, I can only answer questions.")
-		check = false
+		check = False
 		return check
 
 def answerUser():
@@ -26,7 +26,10 @@ def answerUser():
 		      'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.',
 		      'Outlook not so good.','Very doubtful.']
 	print(list[x])
-while check == false:
-	b = askUser()
+
+b = askUser()
+if b != 'quit':
+	while checkQuestion(b) == False:
+		b = askUser()
 	answerUser()
 
