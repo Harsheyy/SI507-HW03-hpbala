@@ -10,7 +10,9 @@ def askUser():
 check = False
 
 def checkQuestion(string):
-	if string[-1] == '?':
+	if string == "quit":
+		return
+	elif string[-1] == '?':
 		check = True
 		return check
 	else:
