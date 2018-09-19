@@ -13,4 +13,4 @@ def answerUser():
 		   'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.',
 		   'Outlook not so good.','Very doubtful.']
 	
-	return answers[x]
+	print(answers[x])
